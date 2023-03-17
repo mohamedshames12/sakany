@@ -233,6 +233,73 @@ header {
    padding: 0.4rem;
 }
 
+/* offers */
+
+.offers{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.offers h1{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+    color: #01303e;
+}
+
+.offers .pargraph {
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.container-box{
+    display: flex;
+    margin: 1rem 0;
+}
+.offers .container-box .box{
+    border: 1px solid #000;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.offers .container-box .box img{
+    height: 15rem;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.offers .container-box .box p {
+    margin: .5rem 0;
+    text-align: center;
+    color: #828282;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.offers .container-box .box .btn{
+    width: 90%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: .3rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin: .5rem auto;
+    background: #01303e;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.offers .container-box .box .btn:hover{
+    background: #fff;
+    color: #01303e;
+    border: 1px solid #01303e;
+}
+
+
+
+
+
 /*  for mobile */
 @media (max-width:768px) {
     .container{
@@ -306,5 +373,20 @@ header {
         font-size: 1.7rem;
         color: #3a5a40;
     }
-    
+
+    .offers .container-box .box{
+        width: 50%;
+       margin-left: .95rem
+    }
+
+    .offers h1{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .offers .pargraph{
+        text-align: center;
+        width: 100%;
+        text-align: center;
+    }
 }
