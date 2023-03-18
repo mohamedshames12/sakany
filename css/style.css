@@ -491,8 +491,7 @@ header {
     }
 
     .offers .container-box .box{
-        width: 50%;
-       margin-left: .95rem
+        margin-left: 1.5rem;
     }
 
     .offers h1{
@@ -508,5 +507,14 @@ header {
 
     .heading{
         font-size: 1.5rem;
+    }
+
+    .projects .container{
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .box-projects{
+        margin: 1rem 0;
     }
 }
