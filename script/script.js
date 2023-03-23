@@ -20,3 +20,4 @@ dropdown_items.forEach(items => {
         output.value = items.innerText;
     }
 })
+

@@ -23,7 +23,7 @@
                     <a href="../components/contact.html">Contact</a>
                     <a href="register.html">signup</a>
                 </nav>
-
+                <div id="translate"></div>
                 <i class="fa-solid fa-bars" id="menu"></i>
             </div>
         </header>
@@ -48,5 +48,13 @@
 
     <!-- js file -->
         <script src="../script/script.js"></script>
+
+        <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+        <script>
+            function loadGoogleTranslate() {
+                new google.translate.TranslateElement("translate")
+            }
+        </script>
+
 </body>
 </html>
