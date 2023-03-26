@@ -811,6 +811,7 @@ header {
         background-color: #fff;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         border-bottom: 1px solid #ccc;
+        z-index: 2000;
     }
 
     .navber.active{
