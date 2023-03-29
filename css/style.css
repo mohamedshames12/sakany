@@ -27,6 +27,84 @@ header {
     border-bottom: 1px solid lightgray;
 }
 
+section{
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.hero{
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.hero .slide .image {
+    flex: 1;
+}
+
+.hero .slide .image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+}
+
+.hero .slide .contact {
+    flex: 1;
+    text-align: center;
+}
+
+.hero .slide .contact span {
+    margin-bottom: .5rem;
+}
+
+.hero .slide .contact h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #345674;
+    margin-bottom: .5rem;
+}
+
+.hero .slide .contact a {
+    background: #2a9d8f;
+    display: flex;
+    margin: auto;
+    width: 150px;
+    height: 35px;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.hero .slide .contact a:hover{
+    background: transparent;
+    border: var(--border);
+    color: #345674;
+}
+
+
+span.swiper-pagination-bullet-active{
+   background: var(--red-dark);
+}
+
+
 .container{
     width: 100%;
     max-width: 1200px;
@@ -44,20 +122,23 @@ header {
 
 }
 
-.container span{
+.container img{
     color: #02544b;
     font-weight: 700;
     border-bottom: 2px solid #02544b;
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
 }
 
 .navber a{
     margin-left: 1rem;
     font-size: 1.1rem;
-    color: #006d77;
+    color: #01303e;
 }
 
 .navber a:hover{
-    color: #02544b;
+    color: #219ebc;
     border-bottom: 2px solid #02544b;
     transition: all .2s linear;
 }
@@ -806,7 +887,7 @@ header {
     }
     .navber{
         position: absolute;
-        top: 9%; left: 0; right: 0;
+        top: 15%; left: 0; right: 0;
         text-align: center;
         background-color: #fff;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -981,6 +1062,16 @@ header {
     .email_us .email{
         text-align: center;
         margin: 1rem 0;
+    }
+
+    .hero .slide {
+        display: block;
+        margin: 1rem 0;
+    }
+    
+    .hero .slide .image img {
+        margin-top: 1rem;
+        width: 90%;
     }
 
 }

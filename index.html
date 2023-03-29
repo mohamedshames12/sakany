@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
     <title>سكني</title>
 </head> 
 <body>
@@ -14,7 +18,7 @@
     <!-- section header start -->
         <header>
             <div class="container">
-                <a href="index.html" class="logo"> <span>سكني</span></a>
+                <a href="index.html" class="logo"> <img src="images/header.jpg" alt=""></a>
                 <nav class="navber">
                     <a href="index.html">الصفحة الرئيسية</a>
                     <a href="components/reports.html">التقارير والبيانات</a>
@@ -27,66 +31,48 @@
                 <i class="fa-solid fa-bars" id="menu"></i>
             </div>
         </header>
-    <!-- section header ends -->
 
-  
 
-    <!-- section offers starts -->
-
-    <section class="offers">
-        <h1>الخدمات والمنتجات</h1>
-        <p class="pargraph">من خلال الخدمات والمنتجات التي تناسب تطلعاتك ، يوفر لك سكني فرصة لمساعدتك في الحصول على وحدتك السكنية التي تناسب ذوقك</p>
-        <div class="mySwiper">
-            <div class="container-box swiper-wrapper">
-              <div class="box swiper-slide">
-                <img src="images/pexels-photo-209296.jpg" alt="">
-                <div class="info-img">
-                    <p>منتج الوحدة الجاهزة من السوق</p>
-                    <button class="btn">اري المزيد</button>
+        <section class="hero">
+            <div class="swiper hero-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide">
+                        <div class="contact">
+                            <span>خصم %40</span>
+                            <h3>عمارة</h3>
+                            <a href="components/menu.html" class="btn">احجز الان</a>
+                        </div>
+                        <div class="image">
+                            <img src="images/pexels-photo-250659.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="contact">
+                            <span>خصم %40</span>
+                            <h3>مجمع سكني</h3>
+                            <a href="components/menu.html" class="btn">احجزالان</a>
+                        </div>
+                        <div class="image">
+                            <img src="images/pexels-photo-356809.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="contact">
+                            <span>خصم %40</span>
+                            <h3>شقة</h3>
+                            <a href="components/menu.html" class="btn">احجزالان</a>
+                        </div>
+                        <div class="image">
+                            <img src="images/pexels-photo-542403.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-             </div>
-              <div class="box swiper-slide">
-                <img src="images/pexels-photo-250659.jpg" alt="">
-                <div class="info-img">
-                    <p>منتج فيلات الوزارة الجاهزة</p>
-                    <button class="btn">اري المزيد</button>
-                </div>
-              </div>
-              <div class="box swiper-slide">
-                <img src="images/pexels-photo-356809.jpg" alt="">
-                <div class="info-img">
-                    <p>منتج أرض سكنية</p>
-                    <button class="btn">اري المزيد</button>
-                </div>
-              </div>
-              <div class="box swiper-slide">
-                <img src="images/pexels-photo-542403.jpg" alt="">
-                <div class="info-img">
-                    <p>مشاريع أراضي القطاع الخاص</p>
-                    <button class="btn">اري المزيد</button>
-                </div>
-              </div>
-              <div class="box swiper-slide">
-                <img src="images/pexels-photo-672916.jpg" alt="">
-                <div class="info-img">
-                    <p>حزم القطاع السكني</p>
-                    <button class="btn">اري المزيد</button>
-                </div>
-              </div>
-              <div class="box swiper-slide">
-                <img src="images/pexels-photo-772177.jpg" alt="">
-                <div class="info-img">
-                    <p>حزم القطاع السكني</p>
-                    <button class="btn">اري المزيد</button>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <!-- section offers ends -->
-
+        </section>
+    
+    
+  
 
     <section class="projects">
         <h1 class="heading">المشاريع الأكثر رواجًا</h1>
@@ -218,24 +204,20 @@
     <!-- js file -->
         <script src="script/script.js"></script>
 
-          <!-- Swiper JS -->
-          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+          <!-- link swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          spaceBetween:50,
-          freeMode: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-      </script>
-
-
+    <script>
+        var swiper = new Swiper(".hero-slider", {
+            loop: true,
+            grabCursor: true,
+            effect: "flip",
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+    </script>
 
 </body>
 </html>
